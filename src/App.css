@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+:root {
+  --background: #ffffff;
+  --text: #000000;
+  --card-bg: #f0f0f0;
+}
+
+[data-theme="dark"] {
+  --background: #1a202c;
+  --text: #ffffff;
+  --card-bg: #2d3748;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+input, select, button {
+  background-color: var(--card-bg);
+  color: var(--text);
+}
+
+button:hover {
+  filter: brightness(90%);
+}
+
+/* Стилі для сітки */
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid-item {
+  min-width: 0;
+  word-wrap: break-word;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  background-color: var(--card-bg);
+}
+
+/* Адаптивність сітки */
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Стилі для завдань (світла тема) */
+.task-completed {
+  background-color: #c6f6d5; /* Салатовий фон для виконаних завдань */
+}
+
+.task-overdue {
+  background-color: #feb2b2; /* Червоний фон для прострочених завдань */
+}
+
+.task-active {
+  background-color: #bfdbfe; /* Голубий фон для активних завдань */
+}
+
+/* Стилі для завдань (темна тема) */
+[data-theme="dark"] .task-completed {
+  background-color: #4a7044; /* Темно-салатовий фон для виконаних завдань */
+}
+
+[data-theme="dark"] .task-overdue {
+  background-color: #7f3f3f; /* Темно-червоний фон для прострочених завдань */
+}
+
+[data-theme="dark"] .task-active {
+  background-color: #3b5d7c; /* Темно-голубий фон для активних завдань */
+}
+
+/* Корекція рамки для темної теми */
+[data-theme="dark"] .grid-item {
+  border-color: #4b5563; /* Темніша рамка для темної теми */
+}
