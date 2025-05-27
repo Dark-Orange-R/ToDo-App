@@ -1,12 +1,21 @@
-# React + Vite
+Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Опис
 
-## Expanding the ESLint configuration
+Todo App — це простий і зручний веб-додаток для управління завданнями, створений для організації щоденних справ. Додаток дозволяє додавати, редагувати, видаляти та позначати завдання як виконані, із можливістю вказувати дедлайн і пріоритет. Завдання групуються за датами, підтримуються фільтрація та статистика.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Основні функції:
+
+Додавання, редагування та видалення завдань із текстом, дедлайном і пріоритетом.
+
+Групування завдань за датами дедлайнів.
+
+Фільтрація завдань ("Всі", "Виконані", "Активні", "Прострочені").
+
+Статистика виконаних, активних і прострочених завдань.
+
+Адаптивний дизайн із підтримкою світлої та темної тем.
+
+Локальне збереження даних у LocalStorage.
